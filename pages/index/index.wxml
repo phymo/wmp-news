@@ -1,0 +1,36 @@
+<view class='body'>
+  <view class='nav-list'>
+    <view wx:for="{{navList}}" wx:key="{{item.id}}">
+      <view wx:if="{{item.type === type}}" class="nav-item" bindtap='onChooseType' data-type='{{item.typeCN}}' style='border-bottom:1px solid white'>{{item.typeCN}}</view>
+      <view wx:else class="nav-item" bindtap='onChooseType' data-type='{{item.typeCN}}'>{{item.typeCN}}</view>
+    </view>      
+  </view>
+  <view class='top-news' bindtap='onNewsPage' data-id='{{topNewsId}}'>
+    <image class='top-news-background' src='{{topNewsImage}}'></image>
+    <view class='top-news-highline'>
+      <view class='top-news-title'>{{topNewsTitle}}</view>
+      <view class='top-news-detail'>
+        <view class='top-news-source'>{{topNewsSource}}</view>
+        <view class='top-news-time'>{{topNewsTime}}</view>
+      </view>
+    </view>
+  </view>
+   <scroll-view>
+    <view class='news-list'>
+      <view class='news-item' wx:for="{{newsList}}" wx:key="{{item.id}}" bindtap='onNewsPage' data-id='{{item.newsId}}'>
+        <view class='news-highline'>
+          <view class='news-title'>{{item.newsTitle}}</view>
+          <view class='news-detail'>
+            <view class='news-source'>{{item.newsSource}}</view>
+            <view class='news-time'>{{item.newsTime}}</view>
+          </view>
+        </view>
+        <image class='news-image' src='{{item.newsImage}}'></image>
+      </view>
+    </view>
+  </scroll-view>   
+</view>
+
+
+
+

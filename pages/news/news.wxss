@@ -1,0 +1,45 @@
+.body {
+  box-sizing: border-box;
+}
+
+.news-title {
+  font-size: 50rpx;
+  line-height: 70rpx;
+  opacity: 0.9;
+  margin: 30rpx;
+}
+
+.news-detail {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  margin: 30rpx;
+  opacity: 0.77;
+}
+
+.news-source {
+  margin-right: 20rpx;
+}
+
+.news-time {
+  flex-grow: 1;
+}
+
+.news-content {
+  margin: 30rpx;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.news-content-image {
+  align-self: center;
+}
+
+.news-content-p {
+  opacity: 0.77;
+}
+
+

@@ -1,0 +1,103 @@
+.nav-list {
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  background-color: #4f9fdc;
+   padding: 5rpx 0; 
+  height: 70rpx;
+  width:100%;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 10rpx 17rpx; 
+  font-size: 35rpx;
+  line-height: 49rpx;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.top-news {
+  position: relative;
+  top: 70rpx;
+  height: 430rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  padding-top: 220rpx;
+}
+
+.top-news-background {
+  position: absolute;
+  top: 30rpx;
+  height: 370rpx;
+  width: 690rpx; 
+}
+
+.top-news-highline {
+  padding: 20rpx;
+  color: white;
+  opacity: 0.9;
+}
+
+.top-news-title {
+  font-size: 35rpx;
+  line-height: 49rpx;
+}
+
+.top-news-detail {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  display: flex;
+  opacity: 0.7;
+}
+
+.top-news-source {
+  margin-right: 20rpx;
+}
+
+.news-list {
+  margin-top: 70rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  height: 180rpx;
+}
+
+.news-highline {
+  width: 500rpx;
+  padding: 20rpx;
+}
+
+.news-title {
+  font-size: 33rpx;
+  line-height: 46.2rpx;
+}
+
+.news-detail {
+  display: flex;
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.7;
+  padding: 10rpx 0;
+}
+
+.news-source {
+  margin-right: 20rpx;
+}
+
+.news-time {
+  padding: 0;
+}
+
+.news-image {
+  width: 210rpx;
+  height: 131.25rpx;
+  padding: 20rpx;
+}

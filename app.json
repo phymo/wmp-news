@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#4f9fdc",
+    "navigationBarTitleText": "肥猫新闻",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  }
+}
