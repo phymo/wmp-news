@@ -85,9 +85,9 @@ Page({
         let hour = firstResult.date.substring(11, 13);
         let minute = firstResult.date.substring(14, 16);
         this.setData({
-          topNewsImage: firstResult.firstImage,
+          topNewsImage: firstResult.firstImage||'../../images/0.jpg',
           topNewsTitle: firstResult.title,
-          topNewsSource: firstResult.source,
+          topNewsSource: firstResult.source || '未知来源',
           topNewsTime: `${newsDate} ${hour}:${minute}`,
           topNewsId: firstResult.id
         })
@@ -99,15 +99,21 @@ Page({
           let hour = news.date.substring(11, 13);
           let minute = news.date.substring(14, 16);
           newsList.push({
-            newsImage: news.firstImage,
+            newsImage: news.firstImage || '../../images/0.jpg',
             newsTitle: news.title,
-            newsSource: news.source,
+            newsSource: news.source ||'未知来源',
             newsTime: `${newsDate} ${hour}:${minute}`,
             newsId:  news.id
           });
         }
         this.setData({
           newsList: newsList
+        })
+      },
+      fail: error=>{
+        console,log(error);
+        wx.showToast({
+          title: '加载失败',
         })
       },
       complete: () => {
